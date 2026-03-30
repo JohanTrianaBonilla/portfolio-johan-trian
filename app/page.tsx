@@ -16,7 +16,7 @@ const projects = [
     description:
       'Sistema web desarrollado para facilitar la interaccion entre estudiantes mediante un sistema de coincidencias dentro del entorno universitario.',
     impact:
-      'Proyecto ideal para mostrar integracion entre frontend, backend y persistencia de datos en una arquitectura moderna.',
+      'Enfoque en experiencia de usuario, logica de emparejamiento e integracion entre frontend y backend para un flujo de uso claro y funcional.',
     stack: ['React', 'FastAPI', 'APIs', 'Bases de datos relacionales'],
     links: [
       {
@@ -35,7 +35,7 @@ const projects = [
     description:
       'Sistema de analisis y gestion de perfiles que integra procesamiento de datos, busqueda semantica y generacion de insights mediante modelos de lenguaje.',
     impact:
-      'Demuestra trabajo con datos, busqueda semantica y herramientas modernas de backend para soluciones con IA aplicada.',
+      'Combina procesamiento de datos, almacenamiento vectorial y generacion de insights para apoyar decisiones sobre perfiles y conocimiento estructurado.',
     stack: ['Python', 'FastAPI', 'Redis', 'Qdrant', 'IA aplicada'],
     links: [
       {
