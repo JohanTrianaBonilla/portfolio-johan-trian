@@ -1,20 +1,70 @@
 @import "tailwindcss";
 
+:root {
+  --bg-deep: #ffffff;
+  --bg-mid: #ffffff;
+  --text-main: #0f172a;
+  --text-soft: #94a3b8;
+  --line-soft: rgba(255, 255, 255, 0.1);
+  --panel: rgba(10, 15, 30, 0.62);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: #020617;
-  color: #e2e8f0;
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: #ffffff;
+  color: var(--text-main);
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+*::selection {
+  background: rgba(251, 191, 36, 0.28);
+  color: white;
+}
+
 a {
   text-decoration: none;
+}
+
+.glass-panel {
+  border: 1px solid var(--line-soft);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.82), var(--panel));
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+}
+
+.feature-card {
+  border: 1px solid rgba(251, 191, 36, 0.16);
+  background:
+    radial-gradient(circle at top left, rgba(251, 191, 36, 0.16), transparent 30%),
+    linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(8, 15, 31, 0.92));
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.font-serif-display {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.03em;
+}
+
+.hero-paper {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.98)),
+    linear-gradient(60deg, rgba(241, 245, 249, 0.8) 12%, transparent 12.5%, transparent 87%, rgba(241, 245, 249, 0.8) 87.5%, rgba(241, 245, 249, 0.8)),
+    linear-gradient(120deg, rgba(241, 245, 249, 0.7) 12%, transparent 12.5%, transparent 87%, rgba(241, 245, 249, 0.7) 87.5%, rgba(241, 245, 249, 0.7)),
+    linear-gradient(60deg, rgba(248, 250, 252, 0.9) 25%, transparent 25.5%, transparent 75%, rgba(248, 250, 252, 0.9) 75%, rgba(248, 250, 252, 0.9)),
+    linear-gradient(120deg, rgba(248, 250, 252, 0.9) 25%, transparent 25.5%, transparent 75%, rgba(248, 250, 252, 0.9) 75%, rgba(248, 250, 252, 0.9));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
 }

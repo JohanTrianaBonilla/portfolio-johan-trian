@@ -13,4 +13,4 @@ Proyecto creado con Next.js + Tailwind CSS.
 - `public/profile.jpg`: foto de perfil
 - `public/Hoja-de-Vida-Johan-Triana.pdf`: hoja de vida descargable
 
-
+<!--  -->
