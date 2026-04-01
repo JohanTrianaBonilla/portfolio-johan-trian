@@ -41,24 +41,24 @@ export function SocialIcon({ id }: { id: SocialLinkId }) {
 
 export function SkillIcon({ label }: { label: string }) {
   const tone = label.includes('React')
-    ? 'from-cyan-300 to-sky-200 text-cyan-700'
+    ? 'from-stone-200 to-[var(--sage-soft)] text-[var(--sage)]'
     : label.includes('Angular')
-      ? 'from-rose-300 to-pink-200 text-rose-700'
+      ? 'from-stone-300 to-stone-200 text-[var(--text-main)]'
       : label.includes('HTML')
-        ? 'from-amber-200 to-orange-100 text-amber-700'
+        ? 'from-[var(--accent-soft)] to-stone-100 text-[var(--accent)]'
         : label.includes('CSS') || label.includes('Tailwind')
-          ? 'from-sky-200 to-blue-100 text-sky-700'
+          ? 'from-[var(--sage-soft)] to-stone-100 text-[var(--sage)]'
           : label.includes('Python') || label.includes('FastAPI') || label.includes('Spring')
-            ? 'from-emerald-200 to-lime-100 text-emerald-700'
+            ? 'from-[var(--sage-soft)] to-stone-200 text-[var(--sage)]'
             : label.includes('Java') || label.includes('Git') || label.includes('Redis')
-              ? 'from-orange-200 to-red-100 text-orange-700'
+              ? 'from-stone-300 to-[var(--accent-soft)] text-[var(--text-main)]'
               : label.includes('Docker')
-                ? 'from-sky-200 to-cyan-100 text-sky-700'
+                ? 'from-stone-200 to-[var(--sage-soft)] text-[var(--sage)]'
                 : label.includes('SQL') || label.includes('MySQL') || label.includes('Postgre')
-                  ? 'from-indigo-200 to-slate-100 text-indigo-700'
-                  : 'from-violet-200 to-indigo-100 text-violet-700';
+                  ? 'from-stone-300 to-stone-100 text-[var(--text-main)]'
+                  : 'from-[var(--accent-soft)] to-stone-100 text-[var(--accent)]';
 
-  const wrapperClass = `flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 bg-gradient-to-br shadow-inner ${tone}`;
+  const wrapperClass = `flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--line-soft)] bg-gradient-to-br shadow-inner ${tone}`;
 
   if (label === 'React') {
     return (
@@ -109,7 +109,7 @@ export function SkillIcon({ label }: { label: string }) {
   if (label === 'JavaScript') {
     return (
       <div className={wrapperClass}>
-        <div className="rounded-xl bg-slate-900/15 px-2 py-1 text-xs font-black tracking-tight text-slate-700">JS</div>
+        <div className="rounded-xl bg-[var(--bg-soft-strong)] px-2 py-1 text-xs font-black tracking-tight text-[var(--text-main)]">JS</div>
       </div>
     );
   }

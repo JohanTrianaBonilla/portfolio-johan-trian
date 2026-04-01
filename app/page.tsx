@@ -20,7 +20,7 @@ export default function Home() {
   const t = content[language];
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-white text-slate-900">
+    <main className="relative min-h-screen overflow-hidden text-[var(--text-main)]">
       <SocialRail language={language} />
 
       <section className="relative px-0 pb-16 pt-24 md:pb-24 md:pt-24">
